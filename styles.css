@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: ear-gradient(to bottom, #4F94CD, #63B8FF);
+    background-color: pink;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +11,8 @@ body {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
 }
 
 header h1 {
