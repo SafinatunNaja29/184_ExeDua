@@ -25,10 +25,7 @@ header h1 {
 
 .media audio,
 .media video {
-    width: 100%;
-    max-width: 400px; 
-    height: auto;
-    margin: 10px 0 auto;
+    margin: 10px 0;
 }
 
 .slider {
@@ -39,6 +36,8 @@ header h1 {
 }
 
 .slides {
+    max-width: 50%; /* Mengatur lebar maksimum poster */
+    margin: auto; /* Membuat poster berada di tengah */
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
