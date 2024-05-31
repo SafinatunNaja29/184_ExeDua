@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Survey Form</h1>
+        </header>
+        <form id="surveyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType" required>
+                <option value="vip">VIP</option>
+                <option value="regular">Regular</option>
+                <option value="economy">Economy</option>
+            </select>
+
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('surveyForm').onsubmit = function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const dob = document.getElementById('dob').value;
+            const ticketType = document.getElementById('ticketType').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const comments = document.getElementById('comments').value;
+            
+            alert(`Name: ${name}\nDate of Birth: ${dob}\nTicket Type: ${ticketType}\nGender: ${gender}\nComments: ${comments}`);
+        };
+    </script>
+</body>
+</html>
