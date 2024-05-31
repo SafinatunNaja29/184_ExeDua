@@ -74,9 +74,9 @@ header h1 {
 button {
     display: block;
     width: 200px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
-    background-color: #75afee;
+    background-color: #518ac6;
     color: #ffffff;
     border: none;
     border-radius: 5px;

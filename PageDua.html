@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Ticket</title>
+    <title>Form Order Ticket</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Survey Form</h1>
+            <h1>Order Ticket</h1>
         </header>
         <form id="surveyForm">
             <label for="name">Name :</label>
@@ -23,8 +23,8 @@
 
             <label for="ticketType">Ticket Type :</label>
             <select id="ticketType" name="ticketType" required>
-                <option value="vip">Regular</option>
-                <option value="economy">VVIP</option>
+                <option value="Regular">Regular</option>
+                <option value="VVIP">VVIP</option>
             </select>
 
             <label>Gender :</label>
@@ -56,7 +56,8 @@
             const gender = document.querySelector('input[name="gender"]:checked').value;
             const comments = document.getElementById('comments').value;
             
-            alert(`Name: ${name}\nDate of Birth: ${dob}\nTicket Type: ${ticketType}\nGender: ${gender}\nComments: ${comments}`);
+            alert(`Name: ${name}\nDate of Birth: ${dob}\nTicket Type: ${ticketType}\nGender: ${gender}\nSecret Message: ${comments}`);
+            alert("Successfully placed an order!");
         };
     </script>
 </body>
