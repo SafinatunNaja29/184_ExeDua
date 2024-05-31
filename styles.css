@@ -47,6 +47,11 @@ header h1 {
     transition: opacity 1s ease-in-out;
 }
 
+.centered-text {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
 .prev, .next {
     position: absolute;
     top: 50%;
